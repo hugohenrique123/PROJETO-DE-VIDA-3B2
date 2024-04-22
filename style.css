@@ -1,18 +1,25 @@
 @import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;700&display=swap');
 
 :root {
-    --cor-de-fundo: #0d0c0c;
-    --verde: #42fcff;
+    --cor-de-fundo: #1E1E1E;
+    --verde: #54d4ee;
     --branco: #FFFFFF;
-    --botao-ativo: #383553;
+    --botao-ativo: #3A375E;
     --botao-inativo: rgba(58, 55, 94, 0.5);
     --texto-fundo: rgba(58, 55, 94, 0.3);
 }
 
 body {
     background-color: var(--cor-de-fundo);
+    background: linear-gradient(#0a1e40, #464b6b);
     color: var(--branco);
     font-family: 'Chakra Petch', sans-serif;
+    background-image: url(Sea_Beach_Shore_Sunset_HD_Landscape_1366x768.jpg);
+    background-repeat: no-repeat;
+    background-size: 2500px 1080px;
+    opacity: 97%;
+    height: 100vh;
+    image-resolution: 3840px 2160px;
 }
 
 
@@ -21,9 +28,10 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    max-width: 1200px;
+    max-width: 1366px;
     width: 100%;
     margin: 0 auto;
+    opacity: 80%;
 }
 
 .titulo-principal {
@@ -68,8 +76,9 @@ body {
 
 .abas-textos{
     background-color: var(--texto-fundo);
+    background: linear-gradient(#051a3e, #01093e);
     padding: 40px;
-    border-radius: 0 0 40px 40px;
+    border-radius: 0 0 20px 20px;
 }
 .aba-conteudo.ativo{
     display:block;
@@ -89,6 +98,30 @@ body {
     text-transform: uppercase;
 }
 
+.contador{
+    display:flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.contador-digito{
+    padding: 0 16px;
+    text-align: center;
+    min-width: 100px;
+}
+
+.contador-digito-numero{
+    font-size: 50px;
+    margin: 0;
+
+}
+
+.contador-digito-texto{
+    color: var(--verde);
+    font-size: 20px;
+    margin: 0;
+
+}
+
 @media screen and (min-width: 768px) {
     .botoes {
         display: flex;
@@ -102,3 +135,5 @@ body {
         border-radius: 0 20px 0 0;
     }
 }
+
+  
